@@ -1,6 +1,3 @@
-import React, { useState, useEffect } from 'react';
-import { Volume2, RefreshCw, Star, Trophy, MessageCircle, BookOpen, Mic, Shuffle, CheckCircle, XCircle } from 'lucide-react';
-
 const SpanishLearningApp = () => {
   const [currentActivity, setCurrentActivity] = useState('home');
   const [score, setScore] = useState(0);
@@ -65,6 +62,328 @@ const SpanishLearningApp = () => {
       icon: "🏨",
       difficulty: "Intermediate",
       phrases: [
+        { spanish: "Tengo una reservación", english: "I have a reservation", pronunciation: "TEN-goh OO-nah reh-sehr-vah-see-OHN" },
+        { spanish: "¿A qué hora es el desayuno?", english: "What time is breakfast?", pronunciation: "ah keh OH-rah ehs el deh-sah-YOO-noh" },
+        { spanish: "¿Dónde está el ascensor?", english: "Where is the elevator?", pronunciation: "DOHN-deh es-TAH el ah-sen-SOHR" },
+        { spanish: "Necesito toallas limpias", english: "I need clean towels", pronunciation: "neh-seh-SEE-toh toh-AH-yahs LEEM-pee-ahs" },
+        { spanish: "¿Hay servicio de habitación?", english: "Is there room service?", pronunciation: "eye sehr-VEE-see-oh deh ah-bee-tah-see-OHN" }
+      ]
+    },
+    {
+      id: 5,
+      title: "Pidiendo Direcciones",
+      icon: "🗺️",
+      difficulty: "Intermediate",
+      phrases: [
+        { spanish: "Disculpe, ¿dónde está...?", english: "Excuse me, where is...?", pronunciation: "dees-KOOL-peh DOHN-deh es-TAH" },
+        { spanish: "¿Cómo llego al centro?", english: "How do I get to downtown?", pronunciation: "KOH-moh YEH-goh al SEN-troh" },
+        { spanish: "¿Está muy lejos?", english: "Is it very far?", pronunciation: "es-TAH moo-ee LEH-hohs" },
+        { spanish: "Siga derecho", english: "Go straight", pronunciation: "SEE-gah deh-REH-choh" },
+        { spanish: "Doble a la izquierda", english: "Turn left", pronunciation: "DOH-bleh ah lah ees-kee-EHR-dah" }
+      ]
+    },
+    {
+      id: 6,
+      title: "De Compras",
+      icon: "🛍️",
+      difficulty: "Beginner",
+      phrases: [
+        { spanish: "¿Cuánto vale esto?", english: "How much is this?", pronunciation: "KWAN-toh VAH-leh EHS-toh" },
+        { spanish: "¿Tienen en otra talla?", english: "Do you have it in another size?", pronunciation: "tee-EH-nen en OH-trah TAH-yah" },
+        { spanish: "Me gusta mucho", english: "I like it a lot", pronunciation: "meh GOOS-tah MOO-choh" },
+        { spanish: "¿Puedo probármelo?", english: "Can I try it on?", pronunciation: "PWEH-doh proh-BAHR-meh-loh" },
+        { spanish: "Lo compro", english: "I'll buy it", pronunciation: "loh KOHM-proh" }
+      ]
+    },
+    {
+      id: 7,
+      title: "En el Trabajo",
+      icon: "💼",
+      difficulty: "Intermediate",
+      phrases: [
+        { spanish: "Me gustaría programar una reunión", english: "I would like to schedule a meeting", pronunciation: "meh goos-tah-REE-ah proh-grah-MAHR OO-nah reh-oo-nee-OHN" },
+        { spanish: "¿Podríamos discutir el proyecto?", english: "Could we discuss the project?", pronunciation: "poh-DREE-ah-mohs dees-koo-TEER el proh-YEK-toh" },
+        { spanish: "Necesito enviar este informe", english: "I need to send this report", pronunciation: "neh-seh-SEE-toh en-vee-AHR EHS-teh in-FOR-meh" },
+        { spanish: "¿Cuál es la fecha límite?", english: "What is the deadline?", pronunciation: "kwahl ehs lah FEH-chah LEE-mee-teh" },
+        { spanish: "Trabajemos juntos en esto", english: "Let's work together on this", pronunciation: "trah-bah-HEH-mohs HOON-tohs en EHS-toh" }
+      ]
+    },
+    {
+      id: 8,
+      title: "En el Médico",
+      icon: "🏥",
+      difficulty: "Intermediate",
+      phrases: [
+        { spanish: "Me duele mucho la cabeza", english: "My head hurts a lot", pronunciation: "meh DWEH-leh MOO-choh lah kah-BEH-sah" },
+        { spanish: "¿Desde cuándo tiene estos síntomas?", english: "Since when have you had these symptoms?", pronunciation: "DEHS-deh KWAN-doh tee-EH-neh EHS-tohs SEEN-toh-mahs" },
+        { spanish: "Tomo medicamentos para la presión", english: "I take medication for blood pressure", pronunciation: "TOH-moh meh-dee-kah-MEN-tohs PAH-rah lah preh-see-OHN" },
+        { spanish: "¿Necesito hacer análisis de sangre?", english: "Do I need to do blood tests?", pronunciation: "neh-seh-SEE-toh ah-SEHR ah-NAH-lee-sees deh SAHN-greh" },
+        { spanish: "Regrese en dos semanas", english: "Come back in two weeks", pronunciation: "reh-GREH-seh en dohs seh-MAH-nahs" }
+      ]
+    },
+    {
+      id: 9,
+      title: "Negociando Precios",
+      icon: "💰",
+      difficulty: "Advanced",
+      phrases: [
+        { spanish: "¿Sería posible conseguir un descuento?", english: "Would it be possible to get a discount?", pronunciation: "seh-REE-ah poh-SEE-bleh kon-seh-GEER oon dehs-KWEN-toh" },
+        { spanish: "El precio me parece un poco elevado", english: "The price seems a bit high to me", pronunciation: "el PREH-see-oh meh pah-REH-seh oon POH-koh eh-leh-VAH-doh" },
+        { spanish: "¿Qué tal si dividimos la diferencia?", english: "How about we split the difference?", pronunciation: "keh tahl see dee-vee-DEE-mohs lah dee-feh-REN-see-ah" },
+        { spanish: "Necesito consultar con mi jefe", english: "I need to consult with my boss", pronunciation: "neh-seh-SEE-toh kon-sool-TAHR kon mee HEH-feh" },
+        { spanish: "¿Cuál sería su mejor oferta?", english: "What would be your best offer?", pronunciation: "kwahl seh-REE-ah soo meh-HOHR oh-FEHR-tah" }
+      ]
+    },
+    {
+      id: 10,
+      title: "Conversación Profunda",
+      icon: "🧠",
+      difficulty: "Advanced",
+      phrases: [
+        { spanish: "¿Qué opinas sobre la situación actual?", english: "What do you think about the current situation?", pronunciation: "keh oh-PEE-nahs SOH-breh lah see-too-ah-see-OHN ak-too-AHL" },
+        { spanish: "Desde mi punto de vista, creo que...", english: "From my point of view, I think that...", pronunciation: "DEHS-deh mee POON-toh deh VEES-tah KREH-oh keh" },
+        { spanish: "Es un tema bastante complejo", english: "It's a quite complex topic", pronunciation: "ehs oon TEH-mah bahs-TAHN-teh kom-PLEH-hoh" },
+        { spanish: "Me gustaría escuchar tu perspectiva", english: "I would like to hear your perspective", pronunciation: "meh goos-tah-REE-ah es-koo-CHAHR too pehr-spek-TEE-vah" },
+        { spanish: "Hay varios factores a considerar", english: "There are several factors to consider", pronunciation: "eye VAH-ree-ohs fak-TOH-rehs ah kon-see-deh-RAHR" }
+      ]
+    },
+    {
+      id: 11,
+      title: "Expresando Emociones",
+      icon: "💭",
+      difficulty: "Intermediate",
+      phrases: [
+        { spanish: "Me siento muy emocionado por esto", english: "I feel very excited about this", pronunciation: "meh see-EN-toh moo-ee eh-moh-see-oh-NAH-doh por EHS-toh" },
+        { spanish: "Estoy un poco preocupado", english: "I'm a little worried", pronunciation: "es-TOY oon POH-koh preh-oh-koo-PAH-doh" },
+        { spanish: "Eso me hace sentir orgulloso", english: "That makes me feel proud", pronunciation: "EH-soh meh AH-seh sen-TEER or-goo-YOH-soh" },
+        { spanish: "No puedo evitar sentirme nervioso", english: "I can't help feeling nervous", pronunciation: "noh PWEH-doh eh-vee-TAHR sen-TEER-meh nehr-vee-OH-soh" },
+        { spanish: "Me alegra mucho saber eso", english: "I'm very happy to know that", pronunciation: "meh ah-LEH-grah MOO-choh sah-BEHR EH-soh" }
+      ]
+    },
+    {
+      id: 12,
+      title: "Planificando Eventos",
+      icon: "🎉",
+      difficulty: "Advanced",
+      phrases: [
+        { spanish: "¿Te parece bien si organizamos la fiesta el sábado?", english: "Does it seem okay if we organize the party on Saturday?", pronunciation: "teh pah-REH-seh bee-EN see or-gah-nee-SAH-mohs lah fee-EHS-tah el SAH-bah-doh" },
+        { spanish: "Tendríamos que hacer las reservaciones pronto", english: "We would have to make reservations soon", pronunciation: "ten-DREE-ah-mohs keh ah-SEHR lahs reh-sehr-vah-see-OH-nehs PRON-toh" },
+        { spanish: "¿Cuántas personas crees que vendrán?", english: "How many people do you think will come?", pronunciation: "KWAN-tahs pehr-SOH-nahs KREH-ehs keh ven-DRAHN" },
+        { spanish: "Necesitamos coordinar la música y la comida", english: "We need to coordinate the music and food", pronunciation: "neh-seh-see-TAH-mohs koh-or-dee-NAHR lah MOO-see-kah ee lah koh-MEE-dah" },
+        { spanish: "Si todo sale bien, será increíble", english: "If everything goes well, it will be incredible", pronunciation: "see TOH-doh SAH-leh bee-EN seh-RAH in-kreh-EE-bleh" }
+      ]
+    }
+  ];
+
+  const quizQuestions = [
+    {
+      question: "How do you say 'Thank you very much' in Spanish?",
+      options: ["Muchas gracias", "De nada", "Por favor", "Disculpe"],
+      correct: 0
+    },
+    {
+      question: "What does '¿Cuánto cuesta?' mean?",
+      options: ["What time is it?", "How much does it cost?", "Where is it?", "What is your name?"],
+      correct: 1
+    },
+    {
+      question: "How do you ask 'Where is the bathroom?' in Spanish?",
+      options: ["¿Dónde está el baño?", "¿Cómo está usted?", "¿Qué hora es?", "¿Cuál es su nombre?"],
+      correct: 0
+    },
+    {
+      question: "What does 'Me llamo' mean?",
+      options: ["I am from", "I live in", "My name is", "I am"],
+      correct: 2
+    },
+    {
+      question: "How do you say 'Excuse me' in Spanish?",
+      options: ["Por favor", "Gracias", "Disculpe", "Adiós"],
+      correct: 2
+    },
+    {
+      question: "What does 'Desde mi punto de vista' mean?",
+      options: ["From my house", "Since yesterday", "From my point of view", "Since my birthday"],
+      correct: 2
+    },
+    {
+      question: "How do you say 'I would like to schedule a meeting' in Spanish?",
+      options: ["Me gusta la reunión", "Me gustaría programar una reunión", "Tengo una reunión", "Voy a la reunión"],
+      correct: 1
+    },
+    {
+      question: "What does '¿Sería posible conseguir un descuento?' mean?",
+      options: ["Is it possible to get a discount?", "Would it be possible to get a discount?", "I want a discount", "Do you have discounts?"],
+      correct: 1
+    },
+    {
+      question: "How do you express 'I feel very excited' in Spanish?",
+      options: ["Estoy muy cansado", "Me siento muy emocionado", "Tengo mucha hambre", "Estoy muy ocupado"],
+      correct: 1
+    },
+    {
+      question: "What does 'Hay varios factores a considerar' mean?",
+      options: ["There are many problems", "There are several factors to consider", "There are various solutions", "There are different options"],
+      correct: 1
+    }
+  ];
+
+  const encouragements = [
+    "¡Excelente! 🌟",
+    "¡Muy bien! 👏",
+    "¡Perfecto! ⭐",
+    "¡Increíble! 🎉",
+    "¡Fantástico! 🚀",
+    "¡Bravo! 🎊",
+    "¡Magnífico! ✨"
+  ];
+
+  const playAudio = (text) => {
+    if (audioSupported && 'speechSynthesis' in window) {
+      // Cancel any ongoing speech
+      speechSynthesis.cancel();
+      
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = 'es-ES';
+      utterance.rate = 0.7;
+      utterance.pitch = 1;
+      
+      // Try to get a Spanish voice
+      const voices = speechSynthesis.getVoices();
+      const spanishVoice = voices.find(voice => voice.lang.startsWith('es'));
+      if (spanishVoice) {
+        utterance.voice = spanishVoice;
+      }
+      
+      speechSynthesis.speak(utterance);
+    }
+  };
+
+  const handlePhraseComplete = () => {
+    setCompletedPhrases(prev => new Set([...prev, `${selectedScenario.id}-${currentPhrase}`]));
+    setScore(prev => prev + 10);
+    setStreak(prev => prev + 1);
+    
+    if (currentPhrase < selectedScenario.phrases.length - 1) {
+      setTimeout(() => {
+        setCurrentPhrase(prev => prev + 1);
+        setShowTranslation(false);
+      }, 1500);
+    }
+  };
+
+  const resetScenario = () => {
+    setCurrentPhrase(0);
+    setShowTranslation(false);
+    setCompletedPhrases(new Set());
+  };
+
+  const startQuiz = () => {
+    const randomQuestion = quizQuestions[Math.floor(Math.random() * quizQuestions.length)];
+    setCurrentQuiz(randomQuestion);
+    setSelectedAnswer(null);
+    setShowQuizResult(false);
+    setCurrentActivity('quiz');
+  };
+
+  const handleQuizAnswer = (answerIndex) => {
+    setSelectedAnswer(answerIndex);
+    setShowQuizResult(true);
+    
+    if (answerIndex === currentQuiz.correct) {
+      setScore(prev => prev + 20);
+      setStreak(prev => prev + 1);
+    } else {
+      setStreak(0);
+    }
+  };
+
+  const ActivitySelector = () => (
+    React.createElement('div', { className: "max-w-4xl mx-auto p-6" },
+      React.createElement('div', { className: "text-center mb-8" },
+        React.createElement('h1', { 
+          className: "text-4xl font-bold text-orange-600 mb-2",
+          style: { fontFamily: 'system-ui, -apple-system, sans-serif' }
+        }, "¡Hola! Spanish Practice"),
+        React.createElement('p', { className: "text-gray-600 text-lg" }, "Build confidence through fun activities"),
+        React.createElement('div', { className: "flex justify-center gap-6 mt-4" },
+          React.createElement('div', { className: "flex items-center gap-1 text-orange-500" },
+            React.createElement('span', { className: "text-xl" }, "🏆"),
+            React.createElement('span', { className: "font-semibold" }, `${score} points`)
+          ),
+          React.createElement('div', { className: "flex items-center gap-1 text-purple-500" },
+            React.createElement('span', { className: "text-xl" }, "⭐"),
+            React.createElement('span', { className: "font-semibold" }, `${streak} streak`)
+          )
+        )
+      ),
+
+      !audioSupported && React.createElement('div', { 
+        className: "bg-yellow-50 border border-yellow-200 rounded-lg p-4 mb-6 text-center" 
+      },
+        React.createElement('p', { className: "text-yellow-800" },
+          "🔊 Audio not available in preview mode, but will work when you use this code in a browser!"
+        )
+      ),
+
+      React.createElement('div', { className: "grid md:grid-cols-2 gap-6 mb-8" },
+        React.createElement('div', {
+          className: "bg-gradient-to-br from-blue-500 to-blue-600 text-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer transform hover:scale-105 p-8 text-center",
+          onClick: () => setCurrentActivity('scenarios')
+        },
+          React.createElement('div', { className: "text-5xl mb-4" }, "💬"),
+          React.createElement('h3', { className: "text-2xl font-bold mb-2" }, "Conversation Practice"),
+          React.createElement('p', { className: "text-blue-100" }, "Practice real-world scenarios")
+        ),
+        
+        React.createElement('div', {
+          className: "bg-gradient-to-br from-green-500 to-green-600 text-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer transform hover:scale-105 p-8 text-center",
+          onClick: startQuiz
+        },
+          React.createElement('div', { className: "text-5xl mb-4" }, "📚"),
+          React.createElement('h3', { className: "text-2xl font-bold mb-2" }, "Quick Quiz"),
+          React.createElement('p', { className: "text-green-100" }, "Test your knowledge")
+        )
+      ),
+
+      React.createElement('div', { className: "bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl p-6" },
+        React.createElement('h3', { className: "text-xl font-bold text-purple-800 mb-4 text-center" }, "💡 Speaking Confidence Tips"),
+        React.createElement('div', { className: "grid md:grid-cols-2 gap-4 text-purple-700" },
+          React.createElement('div', null, "• Start with simple phrases and build up"),
+          React.createElement('div', null, "• Practice pronunciation slowly first"),
+          React.createElement('div', null, "• Use hand gestures while speaking"),
+          React.createElement('div', null, "• Record yourself to hear progress"),
+          React.createElement('div', null, "• Don't worry about perfect accent"),
+          React.createElement('div', null, "• Celebrate small victories!")
+        )
+      )
+    )
+  );
+
+  const ScenarioSelector = () => (
+    React.createElement('div', { className: "max-w-4xl mx-auto p-6" },
+      React.createElement('div', { className: "flex items-center justify-between mb-6" },
+        React.createElement('button', {
+          onClick: () => setCurrentActivity('home'),
+          className: "flex items-center gap-2 text-gray-600 hover:text-gray-800 transition-colors"
+        }, "← Back to activities"),
+        React.createElement('h2', { className: "text-2xl font-bold text-gray-800" }, "Choose Your Scenario"),
+        React.createElement('div')
+      ),
+
+      React.createElement('div', { className: "grid md:grid-cols-3 gap-6" },
+        scenarios.map((scenario) =>
+          React.createElement('div', {
+            key: scenario.id,
+            className: "bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer transform hover:scale-105",
+            onClick: () => {
+              setSelectedScenario(scenario);
+              resetScenario();
+            }
+          },
+            React.createElement('div', { className: "p-6 text-center" },
+              React.createElement('div', { className: "text-4xl mb-3" }, scenario.icon),
+              React.createElement('h3', { className: "text-xl font-bold text-gra      phrases: [
         { spanish: "Tengo una reservación", english: "I have a reservation", pronunciation: "TEN-goh OO-nah reh-sehr-vah-see-OHN" },
         { spanish: "¿A qué hora es el desayuno?", english: "What time is breakfast?", pronunciation: "ah keh OH-rah ehs el deh-sah-YOO-noh" },
         { spanish: "¿Dónde está el ascensor?", english: "Where is the elevator?", pronunciation: "DOHN-deh es-TAH el ah-sen-SOHR" },
@@ -617,5 +936,6 @@ const SpanishLearningApp = () => {
     </div>
   );
 };
+
 
 export default SpanishLearningApp;
